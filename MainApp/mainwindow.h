@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include "../MyLibrary1/mylibrary1.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    MyLibrary1 *Library1;
 };
 
 #endif // MAINWINDOW_H

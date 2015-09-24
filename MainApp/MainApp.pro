@@ -21,6 +21,19 @@ include($$PWD/../config.pri)
 SOURCES += main.cpp\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    ../MyLibrary1/mylibrary1.h \
+    ../MyLibrary1/mylibrary1_global.h
 
 FORMS    += mainwindow.ui
+
+LIBS += -L $$DEST_DIRECTORY -lMyLibrary1
+
+INCLUDEPATH += $$DEST_DIRECTORY
+DEPENDPATH += $$DEST_DIRECTORY
+
+message(" -> MainApp: ")
+message("  PWD: ["$$PWD"]")
+message("  DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("  PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("  Libraries: ["$$LIBS"]")

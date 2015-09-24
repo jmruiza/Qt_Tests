@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    Library1 = new MyLibrary1();
+    qDebug() << Library1->output;
 }
 
 MainWindow::~MainWindow()
