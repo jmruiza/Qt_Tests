@@ -18,12 +18,17 @@ include($$PWD/../config.pri)
 
 DEFINES += MYLIBRARY2_LIBRARY
 
-SOURCES +=
+SOURCES += \
+    mylibrary2.cpp
 
 HEADERS +=\
-        mylibrary2_global.h
+        mylibrary2_global.h \
+    mylibrary2.h
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+FORMS += \
+    mylibrary2.ui
