@@ -16,3 +16,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_actionMyLibrary2_triggered()
+{
+    // This is the point where I want show the QDialog from MyLibrary2
+    Library2 = new MyLibrary2(); // This shot a permission error
+    Library2->show();
+}
