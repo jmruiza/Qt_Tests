@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     Library1 = new MyLibrary1();
     qDebug() << Library1->output;
+
+    ui->textEdit->setText( Library1->output );
 }
 
 MainWindow::~MainWindow()
