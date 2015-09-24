@@ -23,11 +23,14 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     ../MyLibrary1/mylibrary1.h \
-    ../MyLibrary1/mylibrary1_global.h
+    ../MyLibrary1/mylibrary1_global.h \
+    ../MyLibrary1/mylibrary2.h \
+    ../MyLibrary1/mylibrary2_global.h
 
 FORMS    += mainwindow.ui
 
-LIBS += -L $$DEST_DIRECTORY -lMyLibrary1
+LIBS += -L $$DEST_DIRECTORY -lMyLibrary1\
+-lMyLibrary2
 
 INCLUDEPATH += $$DEST_DIRECTORY
 DEPENDPATH += $$DEST_DIRECTORY
