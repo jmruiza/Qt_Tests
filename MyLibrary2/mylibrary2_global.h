@@ -1,0 +1,12 @@
+#ifndef MYLIBRARY2_GLOBAL_H
+#define MYLIBRARY2_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MYLIBRARY2_LIBRARY)
+#  define MYLIBRARY2SHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MYLIBRARY2SHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MYLIBRARY2_GLOBAL_H
