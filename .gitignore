@@ -3,6 +3,8 @@
 
 # Qt Autogenerate Files
 *.autosave
+*.pro.user
+
 
 # Compiled Object files
 *.slo
