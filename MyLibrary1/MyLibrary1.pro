@@ -9,6 +9,13 @@ QT       -= gui
 TARGET = MyLibrary1
 TEMPLATE = lib
 
+# Common config  file ----------------------------
+include($$PWD/../config.pri)
+!exists($$PWD/../config.pri) {
+    message("Not found config.pri")
+}
+#-------------------------------------------------
+
 DEFINES += MYLIBRARY1_LIBRARY
 
 SOURCES += mylibrary1.cpp
