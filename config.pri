@@ -9,8 +9,8 @@ CONFIG(release, debug|release) {
 
 PROJECT_ROOT_DIRECTORY = $$PWD #not $$_PRO_FILE_PWD_!
 
-# message("PWD: ["$$PWD"]")
-# message("DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
-# message("PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("PWD: ["$$PWD"]")
+message("DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
 
 

@@ -16,6 +16,8 @@ include($$PWD/../config.pri)
 !exists($$PWD/../config.pri) {
     message("Not found config.pri")
 }
+
+DESTDIR = $${DEST_DIRECTORY}
 #-------------------------------------------------
 
 SOURCES += main.cpp\

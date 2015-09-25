@@ -14,6 +14,8 @@ include($$PWD/../config.pri)
 !exists($$PWD/../config.pri) {
     message("Not found config.pri")
 }
+
+DESTDIR = $${DEST_DIRECTORY}
 #-------------------------------------------------
 
 DEFINES += MYLIBRARY2_LIBRARY
@@ -31,6 +33,12 @@ unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+message(" -> MyLibrary2: ")
+message("  PWD: ["$$PWD"]")
+message("  DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("  PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
+
 
 FORMS += \
     mylibrary2.ui \
