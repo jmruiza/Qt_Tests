@@ -43,6 +43,7 @@
      <string>Open</string>
     </property>
     <addaction name="actionMyLibrary2"/>
+    <addaction name="actionMyLibrary2_Form"/>
    </widget>
    <addaction name="menuOpen"/>
   </widget>
@@ -57,7 +58,12 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionMyLibrary2">
    <property name="text">
-    <string>MyLibrary2</string>
+    <string>MyLibrary2 Dialog</string>
+   </property>
+  </action>
+  <action name="actionMyLibrary2_Form">
+   <property name="text">
+    <string>MyLibrary2 Form</string>
    </property>
   </action>
  </widget>

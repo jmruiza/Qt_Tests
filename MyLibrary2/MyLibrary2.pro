@@ -19,11 +19,13 @@ include($$PWD/../config.pri)
 DEFINES += MYLIBRARY2_LIBRARY
 
 SOURCES += \
-    mylibrary2.cpp
+    mylibrary2.cpp \
+    mylibrary2_form.cpp
 
 HEADERS +=\
         mylibrary2_global.h \
-    mylibrary2.h
+    mylibrary2.h \
+    mylibrary2_form.h
 
 unix {
     target.path = /usr/lib
@@ -31,4 +33,5 @@ unix {
 }
 
 FORMS += \
-    mylibrary2.ui
+    mylibrary2.ui \
+    mylibrary2_form.ui

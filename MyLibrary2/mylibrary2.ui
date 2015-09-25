@@ -22,7 +22,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Hello from MyLibrary2!!</string>
+      <string>Hi, this is MyLibrary2.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
