@@ -36,7 +36,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Nombre:</string>
+        <string>Name:</string>
        </property>
       </widget>
      </item>
@@ -50,7 +50,7 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Direccion:</string>
+        <string>Address:</string>
        </property>
       </widget>
      </item>
@@ -127,7 +127,7 @@
      <item>
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Telefono:</string>
+        <string>Phone:</string>
        </property>
       </widget>
      </item>

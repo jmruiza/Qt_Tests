@@ -24,11 +24,12 @@ SOURCES += main.cpp\
         mainwindow.cpp
 
 HEADERS  += mainwindow.h \
-    ../MyLibrary1/mylibrary1.h \
     ../MyLibrary1/mylibrary1_global.h \
+    ../MyLibrary1/mylibrary1.h \
+    ../MyLibrary2/mylibrary2_global.h \
+    ../MyLibrary2/mylibrary2.h \
     ../MyLibrary2/mylibrary2_dialog.h \
-    ../MyLibrary2/mylibrary2_form.h \
-    ../MyLibrary2/mylibrary2_global.h
+    ../MyLibrary2/mylibrary2_form.h
 
 FORMS    += mainwindow.ui
 
