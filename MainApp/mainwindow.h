@@ -6,7 +6,7 @@
 #include "../MyLibrary1/mylibrary1.h"
 
 // The include and declaration don't shot any problem
-#include "../MyLibrary2/mylibrary2.h"
+#include "../MyLibrary2/mylibrary2_dialog.h"
 #include "../MyLibrary2/mylibrary2_form.h"
 
 namespace Ui {
@@ -30,7 +30,7 @@ private:
     Ui::MainWindow *ui;
     MyLibrary1 *Library1;
     // The include and declaration don't shot any problem
-    MyLibrary2 *Library2;
+    MyLibrary2_Dialog *Library2_Dialog;
     MyLibrary2_Form *Library2_Form;
 };
 

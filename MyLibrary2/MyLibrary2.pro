@@ -21,13 +21,19 @@ DESTDIR = $${DEST_DIRECTORY}
 DEFINES += MYLIBRARY2_LIBRARY
 
 SOURCES += \
-    mylibrary2.cpp \
-    mylibrary2_form.cpp
+    mylibrary2_form.cpp \
+    mylibrary2_dialog.cpp \
+    mylibrary2.cpp
 
 HEADERS +=\
-        mylibrary2_global.h \
-    mylibrary2.h \
-    mylibrary2_form.h
+    mylibrary2_global.h \
+    mylibrary2_form.h \
+    mylibrary2_dialog.h \
+    mylibrary2.h
+
+FORMS += \
+    mylibrary2_form.ui \
+    mylibrary2_dialog.ui
 
 unix {
     target.path = /usr/lib
@@ -38,8 +44,3 @@ message(" -> MyLibrary2: ")
 message("  PWD: ["$$PWD"]")
 message("  DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
 message("  PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
-
-
-FORMS += \
-    mylibrary2.ui \
-    mylibrary2_form.ui

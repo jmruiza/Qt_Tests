@@ -20,8 +20,8 @@ MainWindow::~MainWindow()
 void MainWindow::on_actionMyLibrary2_triggered()
 {
     // This is the point where I want show the QDialog from MyLibrary2
-    Library2 = new MyLibrary2(this); // This shot a permission error
-    Library2->show();
+    Library2_Dialog = new MyLibrary2_Dialog(this); // This shot a permission error
+    Library2_Dialog->show();
 }
 
 void MainWindow::on_actionMyLibrary2_Form_triggered()
