@@ -41,7 +41,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="lineEdit_1"/>
      </item>
     </layout>
    </item>

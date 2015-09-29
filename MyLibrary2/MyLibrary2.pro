@@ -29,7 +29,9 @@ HEADERS +=\
     mylibrary2_global.h \
     mylibrary2_form.h \
     mylibrary2_dialog.h \
-    mylibrary2.h
+    mylibrary2.h \
+    ../MyLibrary1/mylibrary1_global.h \
+    ../MyLibrary1/mylibrary1.h \
 
 FORMS += \
     mylibrary2_form.ui \
@@ -40,7 +42,10 @@ unix {
     INSTALLS += target
 }
 
+LIBS += -L $$DEST_DIRECTORY -lMyLibrary1
+
 message(" -> MyLibrary2: ")
 message("  PWD: ["$$PWD"]")
 message("  DEST_DIRECTORY: ["$$DEST_DIRECTORY"]")
 message("  PROJECT_ROOT_DIRECTORY: ["$$DEST_DIRECTORY"]")
+message("  Libraries: ["$$LIBS"]")

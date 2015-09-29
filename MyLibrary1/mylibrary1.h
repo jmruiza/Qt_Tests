@@ -2,6 +2,7 @@
 #define MYLIBRARY1_H
 
 #include <QString>
+#include <QDebug>
 #include "mylibrary1_global.h"
 
 class MYLIBRARY1SHARED_EXPORT MyLibrary1
@@ -9,7 +10,14 @@ class MYLIBRARY1SHARED_EXPORT MyLibrary1
 
 public:
     MyLibrary1();
-    QString output;
+
+    QString name;
+    QString address1;
+    QString address2;
+    QString phone;
+
+    void showData();
+
 };
 
 #endif // MYLIBRARY1_H
